@@ -1,0 +1,26 @@
+ <div id="title"><h4>Few of My Works...</h4></div>
+<div id="carousel-showcase" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li ng-repeat="i in items"  data-target="#carousel-showcase" data-slide-to="{{$index}}" class="{{ ($index == 0) ? 'active' : ''}}"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div ng-repeat="i in items" class="item {{ ($index == 0) ? 'active' : ''}}">
+      <img ng-src="{{i.img}}" alt="{{i.desc}}">
+      <div class="carousel-caption">
+        <h4 class="title"> {{i.title}} <span class="slug"> {{i.slug}} </span> &nbsp; <a href="http://{{i.href}}" class="label label-warning">Link</a></h4>
+        
+      </div>
+    </div>   
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-showcase" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-showcase" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>

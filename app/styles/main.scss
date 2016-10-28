@@ -1,0 +1,134 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+$colorBase        :#6B5E52;
+$colorDarkBold    :#382819;
+$colorDarkSoft    :#3F3329;
+$colorBrightBold  :#CEBBA9;
+$colorBrightSoft  :#9E8B7A;
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: $colorBase;
+  color: $colorDarkSoft;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: $colorBase;
+  color: $colorDarkSoft;
+  text-align: center;
+  a {
+    color: $colorDarkBold;
+  }
+}
+
+#title {
+  background: $colorDarkBold;
+  font-weight: bold;
+  margin: 0px auto;
+  width: 500px;
+
+  h4 {
+    margin: 0;
+    padding: 10px 20px;
+    color: $colorBase;
+  }
+}
+#content {
+  margin-top: 25px;
+}
+#carousel-showcase {
+  width: 1250px;
+  height: 650px;
+  margin-bottom: 100px;
+  margin: 0 auto;
+
+  .carousel-indicators {
+    bottom: -85px;
+  }
+}
+
+.box {
+  width: 1250px;
+  height: 650px;
+  margin: 0 auto;
+  background: $colorDarkSoft;
+  color: $colorDarkBold;
+
+  ul {
+    text-align: left;
+    margin-bottom: 10px;
+    color: $colorBrightBold;
+
+    ul {
+      color: $colorBrightSoft;
+    }
+  }
+
+  h3 { 
+    color: $colorBrightBold;
+  }
+
+  a {
+    color: $colorBrightSoft;
+  }
+}
+
+.carousel-inner .item {
+  height: 700px;
+}
+.carousel-caption {
+  padding-bottom: 0;
+  bottom: 10px;
+  background: $colorDarkSoft;
+  padding: 18px 10px;
+
+  .title {
+    color: $colorBrightBold;
+    margin: 0;
+    line-height: 4px;
+  }
+  .slug {
+    color: $colorBrightSoft;
+  }
+}
+ 
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  color: $colorDarkSoft;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  padding: 0;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
